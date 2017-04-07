@@ -95,12 +95,12 @@ void add_box( struct matrix * edges,
   //left
   add_polygon(edges, x0, y0, z1, x0, y1, z0, x0, y1, z1);
   add_polygon(edges, x0, y0, z1, x0, y1, z0, x0, y0, z0);
-  //top
-  add_polygon(edges, x1, y0, z1, x0, y0, z0, x0, y0, z1);
-  add_polygon(edges, x1, y0, z1, x0, y0, z0, x1, y0, z0);
   //bottom
-  add_polygon(edges, x0, y1, z1, x1, y1, z0, x1, y0, z1);
-  add_polygon(edges, x0, y1, z1, x1, y1, z0, x0, y0, z1);
+  add_polygon(edges, x1, y1, z1, x0, y1, z0, x0, y1, z1);
+  add_polygon(edges, x1, y1, z1, x0, y1, z0, x1, y1, z0);
+  //top
+  add_polygon(edges, x0, y0, z1, x1, y0, z0, x1, y0, z1);
+  add_polygon(edges, x0, y0, z1, x1, y0, z0, x0, y0, z0);
 }
 
 /*======== void add_sphere() ==========
